@@ -14,7 +14,7 @@ class App extends React.Component {
 
   handleSubmitStart = ({ serialized }) => {
     this.setState({ serialized })
-    alert('Pendaftaran Berhasil^_^')
+    alert('Registration successful^_^')
   }
 
   render() {
@@ -26,7 +26,7 @@ class App extends React.Component {
           </div>
           <FormProvider rules={rules} messages={messages}>
             <div className="Judul">
-              <h2>Registrasi</h2>
+              <h2>Registration</h2>
             </div>
             <div className="flex">
               <RegistrationForm onSubmitStart={this.handleSubmitStart} />

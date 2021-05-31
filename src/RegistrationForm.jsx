@@ -49,7 +49,7 @@ export default class RegistrationForm extends React.Component {
           required
           skip />
 
-        <Button primary>REGISTER</Button>
+        <Button primary>REGISTRATION</Button>
       </Form>
     );
   }
