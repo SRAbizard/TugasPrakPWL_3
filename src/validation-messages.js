@@ -5,6 +5,9 @@ export default {
   },
 
   type: {
+    text: {
+      missing: 'Please enter the name!',
+    },
     email: {
       missing: 'Please enter the email!',
       invalid: 'The email you enter is not valid!'

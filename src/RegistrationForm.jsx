@@ -23,10 +23,9 @@ export default class RegistrationForm extends React.Component {
         <Field.Group name="primaryInfo">
           <Input
             name="firstName"
+            type="text"
             placeholder="Name"
-            required={({ get }) => {
-              return !!get(['primaryInfo', 'lastName', 'value'])
-            }} />
+            required />
         </Field.Group>
 
         <Field.Group name="primaryInfo">
