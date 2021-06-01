@@ -1,0 +1,73 @@
+{
+    "case1": {
+        "testcase_name": "Field nama kosong",
+        "data": {
+            "name": "",
+            "email": "saidrizkyabizard@gmail.com",
+            "password": "@Itera26",
+            "re-password": "@Itera26"
+        },
+        "expected": {
+            "pesan": "Please enter the name!"
+        }
+    },
+
+    "case2": {
+        "testcase_name": "Field email tidak sesuai aturan",
+        "data": {
+            "name": "Said Rizky Abizard",
+            "email": "saidrizkyabizard",
+            "password": "@Itera26",
+            "re-password": "@Itera26"
+        },
+        "expected": {
+            "pesan": "The email you enter is not valid!"
+        }
+    },
+    "case3" : {
+        "testcase_name": "Field password tidak sesuai aturan",
+        "data": {
+            "name": "Said Rizky Abizard",
+            "email": "saidrizkyabizard@gmail.com",
+            "password": "itera",
+            "re-password": "@Itera26"
+        },
+        "expected": {
+            "pesan": "Please include at least one capital letter! | Please include at least one number! | Please include at least one symbol! | Password should consist of 6 character!"
+        }
+    },
+    "case4" : {
+        "testcase_name": "Fsi field re-password tidak sama dengan field password",
+        "data": {
+            "name": "Said Rizky Abizard",
+            "email": "saidrizkyabizard@gmail.com",
+            "password": "@Itera26",
+            "re-password": "Itera26"
+        },
+        "expected": {
+            "pesan": "The password you entered does not match!"
+        }
+    },
+    "case5" : {
+        "testcase_name": "Semua field terisi dengan benar",
+        "data": {
+            "name": "Said Rizky Abizard",
+            "email": "saidrizkyabizard@gmail.com",
+            "password": "@Itera26",
+            "re-password": "@Itera26"
+        },
+        "expected": {
+            "pesan": "Registration successful^_^"
+        }
+    },
+    "case6" : {
+        "testcase_name": "Semua field tidak terisi",
+        "data": {
+            "name": "",
+            "email": "",
+            "password": "",
+            "re-password": ""
+        },
+        "expected": "Please enter the name! | Please enter the email! | This field must be filled! | This field must be filled!"
+    }
+}
